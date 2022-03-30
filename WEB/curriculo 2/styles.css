@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    background-color: #d9d7d7;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* centralizar o body */
+
+body{
+    background: rgb(243, 240, 240);
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 11px 7px #000000a1;
+}
+
+header{
+    margin-bottom: 35px;
+}
+
+#titulo{
+    text-align: center;
+    background: #111111;
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+    margin: 15px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#titulo:hover{
+    background:  #d9d7d7;
+    color: #111111;
+    border: 1px solid #111111;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.list-item-name{
+    color: #111111;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.list-item-name:hover{
+    color: #334018;
+}
+
+li{
+    list-style: none;
+}
+
+#foto-perfil{
+    height: 150px;
+    border-radius: 75px;
+    border: 3px solid #334018;
+    transition: 1s;
+}
+
+.main-titles{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
+.all-titles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line{
+    background-color: #111111;
+    height: 3px;
+    width: 70%;
+    margin-left: 10px;
+}
