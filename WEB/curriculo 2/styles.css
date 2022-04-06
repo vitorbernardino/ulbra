@@ -16,6 +16,11 @@ html, body{
 html{
     background-color: #d9d7d7;
     font-family: 'Poppins', sans-serif;
+    transition: 1s;
+}
+
+html.active{
+    background: #565656;
 }
 
 /* centralizar o body */
@@ -26,6 +31,12 @@ body{
     margin: auto;
     padding: 10px 20px;
     box-shadow: 0px 0px 11px 7px #000000a1;
+    transition: 1s;
+}
+
+body.active{
+    background: #181818;
+    color: white;
 }
 
 header{
@@ -40,6 +51,11 @@ header{
     margin: 15px;
     color: #fff;
     transition: 0.5s;
+}
+
+#titulo.active{
+    background-color: white;
+    color: black;
 }
 
 #titulo:hover{
@@ -81,7 +97,7 @@ li{
 #foto-perfil{
     height: 150px;
     border-radius: 75px;
-    border: 3px solid #334018;
+    border: 3px solid black;
     transition: 1s;
 }
 
@@ -163,14 +179,15 @@ font-weight: 600;
 }
 
 .content-title{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .content-pts{
     margin-left: 10%;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
+    
 }
 
 
@@ -200,6 +217,57 @@ font-weight: 600;
 }
 .footer-idi-content{
     margin-top: 15px;
+}
+
+.fas, .far{
+    font-size: 15px;
+}
+
+.icon{
+    display: flex;
+}
+.fa-moon{
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+#a, #b, #c{
+    transition: 1s;
+}
+
+#a.active{
+    color: white;
+}
+#b.active{
+    color: white;
+}
+#c.active{
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.fab{
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.fab:hover{
+    font-size: 30px;
+    color: #008c8c;
+}
+
+.fab.active{
+    color: white;
+    transition: 1s;
 }
 
 @media (max-width: 600px){
@@ -274,4 +342,10 @@ font-weight: 600;
         border: none;
         width: 100%;
     }
+
+    .fa-moon{
+        
+        font-size: 25px;
+    }
 }
+
